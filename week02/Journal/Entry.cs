@@ -1,11 +1,11 @@
 using System;
 
-DateTime theCurrentTime = DateTime.Now;
-string _date = theCurrentTime.ToShortDateString();
-
 public class Entry
 {
+    DateTime theCurrentTime = DateTime.Now;
     public string _date;
+
+    //public string _date;
     public string _promptText;
     public string _entryText;
 
