@@ -16,7 +16,25 @@ public class Journal
     }
     public void SaveToFile(string file)
     {
+        Console.Write("Enter name of the file: ");
+        
+        if (file == "entries.txt")
+        {
+            
+        }
     }
     public void LoadFromFile(string file)
-    {}
+    {
+    string filename = "";
+    string[] lines = System.IO.File.ReadAllLines(filename);
+
+    foreach (string line in lines)
+        {
+            string[] parts = line.Split(",");
+
+            string prompt = parts[0];
+            string entry = parts[1];
+        }
+    }
+    
 }   

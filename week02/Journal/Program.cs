@@ -1,6 +1,4 @@
 using System;
-using System.Threading.Tasks.Dataflow;
-
 class Program
 {
     static void Main(string[] args)
@@ -17,9 +15,8 @@ class Program
             {
                 if (selectedOption == 1)
                 {
-                    PromptGenerator prompt = new PromptGenerator();
-                    
-
+                    PromptGenerator journalprompt = new PromptGenerator();
+                    journalprompt.GetRandomPrompt();
                 }
                 else if (selectedOption == 2)
                 {
