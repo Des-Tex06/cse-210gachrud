@@ -3,14 +3,18 @@ public class Journal
 {   
     string filename = "journal_entries.txt";
     public List<Entry> _entries;
-    string newEntry;
-    public void AddEntry(Entry newEntry)
-    {
+    string newEntry = "";
+
+    public string AddEntry()
+    {   
         string filename = "journal_entries.txt";
 
         using (StreamWriter outputFile = new StreamWriter(filename))
 
         outputFile.Write("Entry: ");
+
+        return "";
+
     }
     public void DisplayAll()
     {
@@ -22,11 +26,17 @@ public class Journal
     public void SaveToFile(string file)
     {
         Console.Write("Enter name of the file: ");
-        
+        file = Console.ReadLine();
         if (file == "journal_entries.txt")
         {
+            using (StreamWriter sw = File.CreateText("journal_entries.txt"))
+            {
+                sw.WriteLine("Entry saved.");
+            }
             
         }
+        
+        
     }
     public void LoadFromFile(string file)
     {

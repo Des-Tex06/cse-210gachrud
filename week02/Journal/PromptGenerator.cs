@@ -3,12 +3,11 @@ public class PromptGenerator
 
     public string GetRandomPrompt()
     {   
-        var random = new Random();
         _prompts = ["What was your favorite meal today?", "Write about one accomplishment you made today.", 
         "Name one hobby that helped distress you.","What could you have done better?",
         "What are you looking forward to tomorrow?","What hobby did you do today?"];
-        int index = random.Next(_prompts.Count);
-        Console.WriteLine(_prompts[index]);
+        Random random = new Random();
+        Console.WriteLine(_prompts[random.Next(0,4)]);
         return "";
         
     }

@@ -18,8 +18,7 @@ class Program
                     PromptGenerator journalPrompt = new PromptGenerator();
                     journalPrompt.GetRandomPrompt();
                     Journal journalEntry = new Journal();
-                    newEntry = Console.WriteLine("Write Entry here:");
-                    journalEntry.AddEntry(newEntry);
+                    journalEntry.AddEntry(); 
                 }
                 else if (selectedOption == 2)
                 {
