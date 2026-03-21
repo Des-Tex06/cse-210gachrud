@@ -1,10 +1,9 @@
 using System;
 
 public class Entry
-{
-    DateTime theCurrentTime = DateTime.Now;
-    string _date = theCurrentTime.ToShortDateString();
-    //public string _date;
+{ 
+    static DateTime theCurrentTime = DateTime.Now;
+    string _date = theCurrentTime.ToShortDateString();         
     public string _promptText;
     public string _entryText;
 

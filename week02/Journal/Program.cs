@@ -15,8 +15,10 @@ class Program
             {
                 if (selectedOption == 1)
                 {
-                    PromptGenerator journalprompt = new PromptGenerator();
-                    journalprompt.GetRandomPrompt();
+                    PromptGenerator journalPrompt = new PromptGenerator();
+                    journalPrompt.GetRandomPrompt();
+                    Journal journalEntry = new Journal();
+                    journalEntry.AddEntry(Entry, newEntry);
                 }
                 else if (selectedOption == 2)
                 {
@@ -25,14 +27,17 @@ class Program
                 }
                 else if (selectedOption == 3)
                 {
-                    
+                    Journal journal3 = new Journal();
+                    journal3.SaveToFile("journal_entries.txt");
                 }
                 else if (selectedOption == 4)
                 {
+                    Journal journal4 = new Journal();
+                    journal4.LoadFromFile("journal_entries.txt");
                 }
                 else
                 {
-                    Console.WriteLine("Hasta La Vista Baby!");
+                    Console.WriteLine("Come back to write again soon. ");
                 }
             }
     }

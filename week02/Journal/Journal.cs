@@ -1,11 +1,16 @@
 using System.IO;
-
 public class Journal
 {   
+    string filename = "journal_entries.txt";
     public List<Entry> _entries;
     public void AddEntry(Entry newEntry)
     {
-        _entries.Add(newEntry);
+        string filename = "journal_entries.txt";
+
+        using (StreamWriter outputFile = new StreamWriter(filename))
+
+        outputFile.Write("Entry: ");
+
     }
     public void DisplayAll()
     {
@@ -18,14 +23,14 @@ public class Journal
     {
         Console.Write("Enter name of the file: ");
         
-        if (file == "entries.txt")
+        if (file == "journal_entries.txt")
         {
             
         }
     }
     public void LoadFromFile(string file)
     {
-    string filename = "";
+    string filename = "journal_entries.txt";
     string[] lines = System.IO.File.ReadAllLines(filename);
 
     foreach (string line in lines)
