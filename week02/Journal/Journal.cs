@@ -3,6 +3,7 @@ public class Journal
 {   
     string filename = "journal_entries.txt";
     public List<Entry> _entries;
+    string newEntry;
     public void AddEntry(Entry newEntry)
     {
         string filename = "journal_entries.txt";
@@ -10,7 +11,6 @@ public class Journal
         using (StreamWriter outputFile = new StreamWriter(filename))
 
         outputFile.Write("Entry: ");
-
     }
     public void DisplayAll()
     {
