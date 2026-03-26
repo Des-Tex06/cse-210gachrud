@@ -4,6 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
+        Scripture ref1 = new Scripture(reference, text);
+        ref1.GetDisplayText();
+        Console.Write("Press enter to hide the words of the scripture or type in 'quit': ");
+        string option = Console.ReadLine();
+        while (option != "quit")
+        {
+            
+        }
     }
 }
