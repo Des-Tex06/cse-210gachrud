@@ -10,22 +10,23 @@ public class Reference
 
     public Reference(string book, int chapter, int verse)
     {
-        _book = "John";
-        _chapter = 3;
-        _verse = 16;
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
 
     }
 
     public Reference(string book, int chapter, int startVerse, int endVerse)
     {
-        _book = "Proverbs";
-        _chapter = 3;
-        _startVerse = 5;
-        _endVerse = 6;
+        _book = book;
+        _chapter = chapter;
+        _startVerse = startVerse;
+        _endVerse = endVerse;
     }
 
-    public string GetDisplayText()
+    public void GetDisplayText()
     {
-        return "";
+        Console.WriteLine($"{_book} {_chapter}:{_startVerse}-{_endVerse}");
+        //Console.WriteLine($"{_book} {_chapter}:{_startVerse}-{_endVerse}");
     }
 }
