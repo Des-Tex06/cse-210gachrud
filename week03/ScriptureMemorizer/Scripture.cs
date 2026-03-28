@@ -1,5 +1,6 @@
 using System;
 using System.Security;
+using System.Collections.Generic;
 
 public class Scripture
 {
@@ -9,15 +10,30 @@ public class Scripture
     Scripture (Reference reference, string text)
     {
         _reference = reference;
+        text = foreach (Word _word in _words)
+        {
+            Console.WriteLine(_word);
+        }
+
 
     }
     public void HideRandomWords(int numberToHide)
     {
-        
+        Random random = new Random();
+        numberToHide = 0;
+        int positionToHide = 0;
+        while (numberToHide.Count)
+        {
+            positionToHide = random.Next(0,_words.Count);
+            if _words = 
+            {
+                
+            }
+        }
     }
     public string GetDisplayText()
     {
-        return "";
+        Console.WriteLine();
     }
 
     public bool IsCompletelyHidden()

@@ -1,0 +1,24 @@
+Encapsulation is another aspect of the practice of abstraction
+(which is, dividing the total amount code of a program between other 
+files instead of containing all of the code in one). Encapsulation itself,
+is the practice of making certain parts of code private causing other parts
+of the code to be restricted from accessing the parts of code made private.
+More often than not, variables with values are marked as private so that 
+other parts of the code cannot break the program by meddling with variables
+and their values. The reason why Encapsulation is important and needed in a program
+is so that the program can run without parts of the code changing other parts of the code,
+causing disfunction within the program but instead, have a functioning program. 
+For example, if a method in a program needs to use a variable with a value which in this
+case is made private (such as the balance of a bank account), there are accessors and mutators or Getters and Setters as they are commonly
+called by. The accessors/Getters obtain the value from the variable without exposing the value to 
+the method and the mutators/Setters set the variable without giving away the private value as well.
+In the main program the methods can compute the functions made in the class(es) using the variables
+without changing or having direct access to the values of the variables.
+
+Here below is an example of Encapsulation code:
+ public void GetFractionString()
+    {
+        Console.WriteLine($"{_top}/{_bottom}");
+    }
+
+

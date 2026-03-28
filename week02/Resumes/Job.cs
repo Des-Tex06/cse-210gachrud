@@ -2,7 +2,8 @@ public class Job
 {
     public string _company = "";
     public string _jobTitle = "";
-    public Job()
+    
+    public Job() //This line of code was unneccessary due to it being absent from the solution version.   
     {
     }
     public int _startYear;

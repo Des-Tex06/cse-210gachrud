@@ -13,6 +13,12 @@ public class Word
     
     public void Hide()
     {
+        char [] letters = _text.ToCharArray();
+        for (int i = 0; i <_text.Length; i++)
+        {
+            letters[i] = '_';
+        }
+        _text = new string(letters);
         _isHidden = true;
     }
 
