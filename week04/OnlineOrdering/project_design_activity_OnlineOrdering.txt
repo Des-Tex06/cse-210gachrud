@@ -1,0 +1,48 @@
+Here is the design for the Online Ordering project;
+
+         Class:    Order
+        Attributes:
+            Customer _name : string
+            private List<Product> _products : string
+        _________________________________________________________
+        Behaviors:
+            CalculateTotalCost() : void
+            DisplaySippingLabel() : void
+            DisplayPackingLabel() : void
+
+
+
+        Class:   Product 
+        Attributes:
+            _name : string
+            _productID : string
+            _price : int 
+            _productQuantity : int
+        ________________________________________________________
+        Behaviors:
+            ComputeProductCost() : int
+
+
+
+        Class:    Customer
+        Attributes:
+            _name : string
+            Address _address 
+        _________________________________________________________
+        Behaviors:
+            Address ReturnUSAResidence() : bool
+
+
+
+        Class:   Address 
+        Attributes:
+            _streetAddress : string
+            _city : string
+            _stateProvince : string 
+        ________________________________________________________
+        Behaviors:
+            DisplayAddress(): string
+            ReturnUSAResidence() : bool
+
+        
+        

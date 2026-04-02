@@ -1,0 +1,23 @@
+Here is the design for the YouTube Videos project;
+
+        Class:   Video 
+        Attributes:
+            _title : string
+            _author : string
+            _length : double 
+            public List<Comment> _comments = new List<Comment>();
+        ________________________________________________________
+        Behaviors:
+            ReturnNumberOfComments() : int
+            DisplayVideo() : void
+
+
+        Class:    Comment
+        Attributes:
+            _commenterName : string
+            _commentText : string
+        _________________________________________________________
+        Behaviors:
+            DisplayComments() : string
+        
+

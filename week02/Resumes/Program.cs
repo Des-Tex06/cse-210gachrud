@@ -12,7 +12,7 @@ job2._startYear = 2022;
 job2._endYear = 2023;
 //job2.DisplayJobDescription();
 Resume myResume = new Resume();
-myResume._jobs.Add(job1);
+myResume._jobs.Add(job1); //When adding things to a list, use the name of the list instead of the instance.
 myResume._jobs.Add(job2);
 myResume._name = "Allison Rose";
 myResume.DisplayResume();
