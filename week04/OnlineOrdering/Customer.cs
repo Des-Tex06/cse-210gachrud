@@ -17,11 +17,6 @@ public class Customer
     }
     //public Address SetAddress(string address)
     //{
-    //    _address = address;
+    //   _address = address;
     //}
-
-    Address ReturnUSAResidence()
-    {
-        return true;
-    }
 }

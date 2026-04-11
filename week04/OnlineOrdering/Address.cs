@@ -3,6 +3,7 @@ public class Address
     private string _streetAddress;
     private string _city;
     private string _stateProvince;
+    private string _country;
 
     public string GetStreetAddress()
     {
@@ -28,10 +29,17 @@ public class Address
     {
         _stateProvince = stateProvince;
     }
-
+    public string GetCountry()
+    {
+        return _country;
+    }
+    public void SetCountry(string country)
+    {
+        _country = country;
+    }
     public string DisplayAddress()
     {
-        return $"{_streetAddress}, {_city}, {_stateProvince}";
+        return $"{_streetAddress}, {_city}, {_stateProvince}, {_country}";
     }
     public bool ReturnUSAResidence()
     {
